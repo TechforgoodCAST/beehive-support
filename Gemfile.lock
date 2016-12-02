@@ -667,6 +667,7 @@ DEPENDENCIES
   rails-i18n (~> 4.0.0)
   rails-settings-cached (~> 0.5)
   rails-timeago
+  rails_12factor
   ranked-model
   rdiscount
   recaptcha
