@@ -18,7 +18,7 @@
     <%= t('message_id', default: 'Message ID') %>:<%= @topic.id %></br>
   </p>
   <p>
-    <%= t('hello', user_name: @topic.user.login) %>,
+    <%= t('hello', user_name: @topic.user.login) %>
   </p>
   <p>
     <%= t('message_response', default: 'The following message has been posted in response to your question:') %>
@@ -27,13 +27,10 @@
     <%= simple_format(@post.body) %>
   </p>
   <%= render :partial => 'posts/thumbnail', locals: { :model_name => @post } %>
-  <p>
-    <%= t('view_online', default: 'View this online:') %> <%= ticket_url(@topic, host: AppSettings['settings.site_url']) %>
-  </p>
   <br/>
   <p>
-    <strong>Powered by Helpy</strong><br/>
-    Get a Free Helpy Support System for your Site at http://helpy.io/
+    <strong>Beehive Support</strong><br/>
+    Get connected to the right funders on <a href="http://www.beehivegiving.org/welcome?utm_source=EmailSignature&utm_medium=Email&utm_content=v1&utm_campaign=EmailSignature1">Beehive</a>
   </p>
   </body>
 </html>
